@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CINORA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+
+    <header>
+
+        <div class="logo">
+            CINORA
+        </div>
+
+        <nav>
+            <a href="#" id="homeLink">Home</a>
+            <a href="#movies" id="moviesLink">Movies</a>
+            <a href="#mylist" id="myListLink">My List</a>
+            <a href="#about" id="aboutlink">About</a>
+        </nav>
+
+        <div class="right-menu">
+
+            <button class="search-btn">
+                Search
+            </button>
+
+            <button class="profile-btn">
+                Profile
+            </button>
+
+        </div>
+
+    </header>
+
+
+  
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">
+                WELCOME TO CINORA
+            </p>
+
+            <h1>
+                Discover <br>
+                Your Next<br>
+                <span>Adventure.</span>
+            </h1>
+
+            <p class="description">
+                Explore movies and TV shows.
+                Find your next favorite story.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button id="heroWatch">
+                    ▶ Watch Now
+                </button>
+
+                <button id="heroList">
+                    + My List
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="featured-movie">
+
+            <img src="interstellar.jpg"
+                 alt="interstellar">
+
+            <div class="featured-details">
+
+                <h2>
+                    INTERSTELLAR
+                </h2>
+
+                <p>
+                    2014 • 2h 49m • Sci-Fi
+                </p>
+
+                <p>
+                    A team of explorers travels through
+                    space in search of a new home.
+                </p>
+
+                <button id="featuredWatch">
+                    ▶ Watch Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="trending" id="movies">
+
+        <h2>
+            Trending Now
+        </h2>
+
+        <div class="movie-container">
+
+
+         
+            <div class="movie-card">
+
+                <img src="goat.jpg"
+                     alt="goat">
+
+                <h3>
+                    GOAT
+                </h3>
+
+                <p>
+                    ⭐ 4.7
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="goat">
+                    + My List
+                </button>
+
+            </div>
+
+
+           
+
+            <div class="movie-card">
+
+                <img src="leo.jpg"
+                     alt="leo">
+
+                <h3>
+                    LEO
+                </h3>
+
+                <p>
+                    ⭐ 4.6
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="leo">
+                    + My List
+                </button>
+
+            </div>
+
+
+
+            <div class="movie-card">
+
+                <img src="dragon.jpg"
+                     alt="dragon">
+
+                <h3>
+                    DRAGON
+                </h3>
+
+                <p>
+                    ⭐ 4.8
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="dragon">
+                    + My List
+                </button>
+
+            </div>
+
+
+         
+
+            <div class="movie-card">
+
+                <img src="inception.jpg"
+                     alt="inception">
+
+                <h3>
+                    INCEPTION
+                </h3>
+
+                <p>
+                    ⭐ 4.5
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="inception">
+                    + My List
+                </button>
+
+            </div>
+
+
+         
+
+            <div class="movie-card">
+
+                <img src="the dark knight.jpg"
+                     alt="the dark knight">
+
+                <h3>
+                    THE DARK KNIGHT
+                </h3>
+
+                <p>
+                    ⭐ 4.8
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="the dark knight">
+                    + My List
+                </button>
+
+            </div>
+
+
+            
+
+            <div class="movie-card">
+
+                <img src="the lion king.jpg"
+                     alt="the lion king">
+
+                <h3>
+                    THE LION KING
+                </h3>
+
+                <p>
+                    ⭐ 4.9
+                </p>
+
+                <button class="add-list-btn"
+                        data-movie="the lion king">
+                    + My List
+                </button>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+
+    
+
+    <section class="my-list-section" id="mylist">
+
+        <h2>
+            ❤️ My List
+        </h2>
+
+        <div id="myListContainer">
+
+            <p class="empty-message">
+                Your My List is empty.
+            </p>
+
+        </div>
+
+    </section>
+
+
+  
+
+    <div class="video-modal" id="videoModal">
+
+        <div class="video-box">
+
+            <button class="close-video" id="closeVideo">
+                ✕
+            </button>
+
+            <h2 id="videoTitle">
+                Movie Trailer
+            </h2>
+
+            <iframe
+                id="movieVideo"
+                width="100%"
+                height="400"
+                src=""
+                title="Movie Trailer"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+  
+
+    <footer>
+
+        <h2>
+            CINORA
+        </h2>
+
+        <p>
+            Your destination for movies and TV shows.
+        </p>
+
+        <p>
+            © 2026 CINORA. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+  
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
